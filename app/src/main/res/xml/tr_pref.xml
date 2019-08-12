@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/title_activity_preference">
+
+
+
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/dialog_title_distance_unit"
+        android:entries="@array/entries_list_preference_unit"
+        android:entryValues="@array/entryvalues_list_preference_unit"
+        android:key="@string/pref_key_unit"
+        android:title="@string/title_distance_unit" />
+    <ListPreference
+        android:defaultValue="100"
+        android:dialogTitle="@string/dialog_title_compress"
+        android:entries="@array/entries_list_preference_compress"
+        android:entryValues="@array/entryvalues_list_preference_compress"
+        android:key="@string/pref_key_compress"
+        android:title="@string/title_distance_compress" />
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/dialog_title_icon_type"
+        android:entries="@array/entries_list_preference_icon_type"
+        android:entryValues="@array/entryvalues_list_preference_icon_type"
+        android:key="@string/pref_key_icon_type"
+        android:title="@string/title_icon_type" />
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/dialog_title_track_color"
+        android:entries="@array/entries_list_preference_track_color"
+        android:entryValues="@array/entryvalues_list_preference_track_color"
+        android:key="@string/pref_key_track_color"
+        android:title="@string/title_distance_track_color" />
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_value_track_width"
+        android:dialogTitle="@string/dialog_title_track_width"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:key="@string/pref_key_track_width"
+        android:lines="1"
+        android:title="@string/dialog_title_track_width" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_value_shutdown"
+        android:dialogTitle="@string/dialog_title_auto_shutdown"
+        android:entries="@array/entries_list_preference_shutdown"
+        android:entryValues="@array/entryvalues_list_preference_shutdown"
+        android:key="@string/pref_key_shutdown"
+        android:title="@string/title_auto_shutdown" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_value_weight"
+        android:dialogTitle="@string/dialog_title_user_weight"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:key="@string/pref_key_weight"
+        android:lines="1"
+        android:title="@string/dialog_title_user_weight" />
+
+    //sex
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="Выберите Ваш пол"
+        android:entries="@array/entries_list_preference_sex"
+        android:entryValues="@array/entryvalues_list_preference_sex"
+        android:key="@string/pref_key_sex"
+        android:title="@string/title_auto_sex" />
+
+    //height
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_value_height"
+        android:dialogTitle="@string/dialog_title_user_height"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:key="@string/pref_key_height"
+        android:lines="1"
+        android:title="@string/dialog_title_user_height" />
+
+    //years
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_value_years"
+        android:dialogTitle="@string/dialog_title_user_years"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        android:key="@string/pref_key_years"
+        android:lines="1"
+        android:title="@string/dialog_title_user_years" />
+
+</PreferenceScreen>

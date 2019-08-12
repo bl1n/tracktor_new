@@ -1,0 +1,3 @@
+# tracktor
+todo:
+screenshotmaker compress

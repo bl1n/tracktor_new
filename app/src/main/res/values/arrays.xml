@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_list_preference_unit">
+        <item>Метры</item>
+        <item>Километры</item>
+        <item>Мили</item>
+        <item>Футы</item>
+    </string-array>
+
+    <string-array name="entryvalues_list_preference_unit">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="entries_list_preference_compress">
+        <item>100%%</item>
+        <item>75%%</item>
+        <item>50%%</item>
+        <item>25%%</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference_compress">
+        <item>100</item>
+        <item>75</item>
+        <item>50</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="entries_list_preference_icon_type">
+        <item>Первый тип</item>
+        <item>Второй тип</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference_icon_type">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_list_preference_track_color">
+        <item>Черный</item>
+        <item>Красный</item>
+        <item>Зеленый</item>
+        <item>Синий</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference_track_color">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="entries_list_preference_shutdown">
+        <item>Никогда</item>
+        <item>10 секунд</item>
+        <item>30 минут</item>
+        <item>60 минут</item>
+    </string-array>
+
+    <string-array name="entryvalues_list_preference_shutdown">
+        <item>  -1</item>
+        <item> 10</item>
+        <item>1800</item>
+        <item>3600</item>
+    </string-array>
+
+    //sex ent
+    <string-array name="entries_list_preference_sex">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+    //sex val
+    <string-array name="entryvalues_list_preference_sex">
+        <item>  1</item>
+        <item> 2</item>
+    </string-array>
+
+    //activity type
+    <string-array name="entryvalues_list_activities">
+        <item>  Ходьба</item>
+        <item> Бег</item>
+        <item> Велосипед</item>
+    </string-array>
+
+</resources>

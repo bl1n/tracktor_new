@@ -1,6 +1,13 @@
 package com.elegion.tracktor.util;
 
 public class DistanceConverter {
-    //класс создан только с целью соответствия ТЗ
-    //вся логика смены системы измерения реализована в StringUtil
+
+    public static double fromMetersToFeet(double meters){
+        return meters * 3.2808;
+    }
+
+    public static double fromKilometersToMiles(double kilometers){
+        return kilometers/1.609344;
+    }
+
 }

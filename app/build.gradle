@@ -1,5 +1,37 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = "0.8.4"
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
+
+
+    reports {
+
+        xml.enabled = true
+
+        html.enabled = true
+
+    }
+
+
+    def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*']
+
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+
+    sourceDirectories = files([mainSrc])
+
+    classDirectories = files([debugTree])
+
+    executionData = files("${buildDir}/jacoco/testDebugUnitTest.exec")
+
+}
 
 android {
     compileSdkVersion 27
@@ -23,6 +55,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            testCoverageEnabled = true
         }
     }
 
